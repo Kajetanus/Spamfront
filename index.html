@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="text/javascript" src="kod.js">
+    </script>
+
+    <title>Feedmail</title>
+  </head>
+  
+  <body>
+    <nav class="nav">
+      <div class="title">
+        <h3 class="heading">Feedmail</h3>
+      </div>
+      <div class="main-buttons">
+        <button class="main-button save-button" type="button">Save</button>
+        <button class="main-button preview-button" type="button">
+          Preview
+        </button>
+        <button class="main-button send-button" type="button">
+          Send &rarr;
+        </button>
+      </div>
+    </nav>
+    <div class="grid-container">
+      <div class="left">
+        <label for="email">Email address</label>
+        <input
+          class="input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="name@example.com"
+        />
+        <p class="confidential">
+          Feel safe, We'll never share your email with anyone else
+        </p>
+        <label for="message">Message</label>
+        <textarea
+          class="input"
+          type="text"
+          rows="12"
+          cols="4"
+          name="message"
+          id="message"
+          placeholder="Your Message Goes Here"
+        ></textarea>
+
+      </div>
+      <div class="right">
+        <label for="url">Rss URL</label>
+        <div class="add-rss">
+          <input
+            class="input rss-input"
+            type="url"
+            name="url"
+            id="url"
+            placeholder="htttps://example.site/rss.xml"
+          />
+          <button type="button" class="main-button add-button">Add</button>
+        </div>
+        <button type="button" class="main-button rss-button">Rss</button>
+      </div>
+    </div>
+
+    </footer>
+  </body>
+</html>
